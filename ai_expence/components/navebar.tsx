@@ -10,59 +10,69 @@
 
 "use client";
 import { useState } from "react";
-import { CiMenuFries } from "react-icons/ci"
-import { IoClose } from "react-icons/io5"
+import { CiMenuFries } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="w-full fixed top-0 left-0 z-50 shadow-md bg-white dark:bg-gray-900 transition-colors">
+        <nav className="w-full fixed top-0 left-0 z-50 shadow-lg bg-white/90 dark:bg-gray-900/90 backdrop-blur-md transition-colors">
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
                 {/* Logo / Mobile Title */}
-                <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                    <span className="md:hidden">Expense Tracker</span>
-                    <span className="hidden md:inline">AI Expense Tracker</span>
+                <h1 className="text-2xl font-bold">
+                    <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">
+                        AI
+                    </span>{" "}
+                    <span className="text-gray-800 dark:text-gray-200">Expense Tracker</span>
                 </h1>
 
                 {/* Desktop Menu */}
-                <ul className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-200 font-medium">
-                    <li className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                        Home
-                    </li>
-                    <li className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                        About
-                    </li>
-                    <li className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                        Contact
-                    </li>
+                <ul className="hidden md:flex space-x-10 text-gray-700 dark:text-gray-200 font-medium">
+                    {["Home", "About", "Contact"].map((item, index) => (
+                        <li
+                            key={index}
+                            className="relative cursor-pointer group"
+                        >
+                            <span className="transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                                {item}
+                            </span>
+                            {/* Underline effect */}
+                            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-blue-600 to-purple-500 transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_8px_2px_rgba(59,130,246,0.7)]"></span>
+                        </li>
+                    ))}
                 </ul>
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-2xl text-gray-700 dark:text-gray-200"
+                    className="md:hidden text-3xl text-gray-700 dark:text-gray-200 transition-transform"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isOpen ? <IoClose /> : <CiMenuFries />}
+                    {isOpen ? <IoClose className="animate-spin" /> : <CiMenuFries />}
                 </button>
             </div>
 
             {/* Mobile Menu Dropdown */}
-            {isOpen && (
-                <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-                    <ul className="flex flex-col space-y-4 py-6 px-6 text-gray-700 dark:text-gray-200 font-medium">
-                        <li className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            Home
+            <div
+                className={`md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 transition-all duration-500 overflow-hidden ${isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+                    }`}
+            >
+                <ul className="flex flex-col space-y-6 py-6 px-6 text-gray-700 dark:text-gray-200 font-medium">
+                    {["Home", "About", "Contact"].map((item, index) => (
+                        <li
+                            key={index}
+                            className="relative cursor-pointer group"
+                        >
+                            <span className="transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                                {item}
+                            </span>
+                            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-blue-600 to-purple-500 transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_8px_2px_rgba(59,130,246,0.7)]"></span>
                         </li>
-                        <li className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            About
-                        </li>
-                        <li className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            Contact
-                        </li>
-                    </ul>
-                </div>
-            )}
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
 }
+
+
