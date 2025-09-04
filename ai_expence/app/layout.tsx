@@ -44,3 +44,6 @@ export default function RootLayout({
 
 
 // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+// className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+//  className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+// className={`${geistSans.variable} ${geistMono.variable} antialiased`}
