@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
+import { checkUser } from "../lib/checkUser";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-
+    const user = checkUser();
     return (
         <nav className="w-full fixed top-0 left-0 z-50 shadow-2xl bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl transition-all duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
