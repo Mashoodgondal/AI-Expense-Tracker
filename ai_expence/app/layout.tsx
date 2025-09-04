@@ -40,3 +40,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
+// className={`${geistSans.variable} ${geistMono.variable} antialiased`}
