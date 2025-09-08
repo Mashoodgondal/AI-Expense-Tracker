@@ -8,7 +8,7 @@
 //     </div>
 // }
 
-
+"use client"
 // components/Navbar.js
 import React, { useState } from 'react';
 import { TbMenuDeep } from "react-icons/tb";
