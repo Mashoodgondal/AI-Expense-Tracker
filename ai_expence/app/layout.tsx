@@ -5,6 +5,7 @@ import Navebar from "@/components/navebar";
 // import { ThemeProvider } from "@/components/ThemeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import ClientThemeProvider from "@/components/clientThemeProvidor";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           <ClientThemeProvider>
             <Navebar />
             {children}
+            <Footer />
           </ClientThemeProvider>
         </body>
       </html>
