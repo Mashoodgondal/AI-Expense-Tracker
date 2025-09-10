@@ -141,3 +141,16 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
+
+
+//   <div className="flex space-x-6 text-sm">
+//                         <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
+//                             Privacy Policy
+//                         </Link>
+//                         <Link href="/terms" className="text-gray-400 hover:text-white transition-colors duration-200">
+//                             Terms of Service
+//                         </Link>
+//                         <Link href="/support" className="text-gray-400 hover:text-white transition-colors duration-200">
+//                             Support
+//                         </Link>
