@@ -68,34 +68,20 @@ const Footer: React.FC = () => {
                         <ul className="space-y-2">
                             <li>
                                 <Link href="/dashboard" className="text-gray-300 hover:text-white transition-colors duration-200">
-                                    Dashboard
+                                    Home
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/expenses" className="text-gray-300 hover:text-white transition-colors duration-200">
-                                    Expenses
+                                    Contact
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/analytics" className="text-gray-300 hover:text-white transition-colors duration-200">
-                                    Analytics
+                                    About
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/categories" className="text-gray-300 hover:text-white transition-colors duration-200">
-                                    Categories
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/reports" className="text-gray-300 hover:text-white transition-colors duration-200">
-                                    Reports
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/settings" className="text-gray-300 hover:text-white transition-colors duration-200">
-                                    Settings
-                                </Link>
-                            </li>
+
                         </ul>
                     </div>
 
@@ -127,18 +113,7 @@ const Footer: React.FC = () => {
                                 </svg>
                                 <span className="text-gray-300 text-sm">Predictive Analytics</span>
                             </li>
-                            <li className="flex items-start">
-                                <svg className="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                </svg>
-                                <span className="text-gray-300 text-sm">Real-time Notifications</span>
-                            </li>
-                            <li className="flex items-start">
-                                <svg className="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                </svg>
-                                <span className="text-gray-300 text-sm">Multi-device Sync</span>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
