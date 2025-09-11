@@ -1,10 +1,12 @@
 
-import Image from "next/image";
+import Guest from "@/components/Guest";
+// import Image from "next/image";
 
 export default function Home() {
   return (
     <div >
-      hellow word
+      <Guest />
+
     </div>
   );
 }
