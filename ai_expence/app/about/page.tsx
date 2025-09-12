@@ -1,15 +1,4 @@
-// import React from 'react'
-
-// const AboutPage = () => {
-//     return (
-//         <div>AboutPage</div>
-//     )
-// }
-
-// export default AboutPage
-
 import Link from 'next/link';
-
 const AboutPage = () => {
     return (
         <div className='font-sans bg-gradient-to-br from-gray-50 via-white to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/20 text-gray-800 dark:text-gray-200 transition-all duration-300 min-h-screen'>
