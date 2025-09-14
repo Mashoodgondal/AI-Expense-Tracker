@@ -99,3 +99,16 @@ export default async function Home() {
 //                 <div className='w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg flex items-center justify-center flex-shrink-0'>
 //                   <span className='text-white text-xs'>📅</span>
 //                 </div>
+
+
+//  <p className='text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 sm:mb-6 max-w-md mx-auto sm:mx-0'>
+//               Here&#39;s a quick overview of your recent expense activity.
+//               Track your spending, analyze patterns, and manage your budget
+//               efficiently!
+//             </p>
+//             {/* Mobile-optimized badge grid */}
+//             <div className='flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center sm:justify-start'>
+//               <div className='bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 border border-emerald-100 dark:border-emerald-800 px-3 py-2 rounded-xl flex items-center gap-2 justify-center sm:justify-start'>
+//                 <div className='w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg flex items-center justify-center flex-shrink-0'>
+//                   <span className='text-white text-xs'>📅</span>
+//                 </div>
