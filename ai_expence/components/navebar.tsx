@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { TbMenuDeep } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 import { UserButton, useUser } from '@clerk/nextjs';
-import ThemeToggle from './ThemeToggle';
+// import ThemeToggle from './ThemeToggle';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -52,7 +52,7 @@ const Navbar = () => {
 
           {/* Right Section */}
           <div className="hidden md:flex items-center space-x-4">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             {!isLoaded ? null : isSignedIn ? (
               <UserButton />
             ) : (
@@ -67,7 +67,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-3">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <button
               onClick={toggleMobileMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"

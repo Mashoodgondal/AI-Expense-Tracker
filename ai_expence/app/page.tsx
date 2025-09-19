@@ -1,10 +1,11 @@
 
 import Guest from "@/components/Guest";
-import { checkUser } from "../lib/checkUser";
+import { currentUser } from "@clerk/nextjs/server";
+// import { currentUser } from "../lib/checkUser";
 // import Image from "next/image";
 
 export default async function Home() {
-  const user = await checkUser();
+  const user = await currentUser();
   if (!user) {
     return Guest;
   }
