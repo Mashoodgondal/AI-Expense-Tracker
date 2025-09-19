@@ -7,7 +7,7 @@ import { currentUser } from "@clerk/nextjs/server";
 export default async function Home() {
   const user = await currentUser();
   if (!user) {
-    return Guest;
+    return <Guest />;
   }
   return (
     <main className='bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans min-h-screen transition-colors duration-300'>
