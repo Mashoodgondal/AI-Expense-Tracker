@@ -1,5 +1,5 @@
-
-import Guest from "@/components/Guest";
+// "use client"
+import Guest from "../components/Guest";
 import { currentUser } from "@clerk/nextjs/server";
 // import { currentUser } from "../lib/checkUser";
 // import Image from "next/image";
