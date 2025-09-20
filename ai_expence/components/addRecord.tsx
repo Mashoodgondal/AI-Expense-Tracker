@@ -12,8 +12,8 @@
 
 'use client';
 import { useRef, useState } from 'react';
-import addExpenseRecord from '@/app/actions/addExpenseRecord';
-import { suggestCategory } from '@/app/actions/suggestCategory';
+// import addExpenseRecord from '@/app/actions/addExpenseRecord';
+// import { suggestCategory } from '@/app/actions/suggestCategory';
 
 const AddRecord = () => {
     const formRef = useRef<HTMLFormElement>(null);
@@ -295,15 +295,15 @@ const AddRecord = () => {
             {alertMessage && (
                 <div
                     className={`mt-4 p-3 rounded-xl border-l-4 backdrop-blur-sm ${alertType === 'success'
-                            ? 'bg-green-50/80 dark:bg-green-900/20 border-l-green-500 text-green-800 dark:text-green-200'
-                            : 'bg-red-50/80 dark:bg-red-900/20 border-l-red-500 text-red-800 dark:text-red-200'
+                        ? 'bg-green-50/80 dark:bg-green-900/20 border-l-green-500 text-green-800 dark:text-green-200'
+                        : 'bg-red-50/80 dark:bg-red-900/20 border-l-red-500 text-red-800 dark:text-red-200'
                         }`}
                 >
                     <div className='flex items-center gap-2'>
                         <div
                             className={`w-6 h-6 rounded-full flex items-center justify-center ${alertType === 'success'
-                                    ? 'bg-green-100 dark:bg-green-800'
-                                    : 'bg-red-100 dark:bg-red-800'
+                                ? 'bg-green-100 dark:bg-green-800'
+                                : 'bg-red-100 dark:bg-red-800'
                                 }`}
                         >
                             <span className='text-sm'>
