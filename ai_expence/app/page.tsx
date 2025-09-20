@@ -1,4 +1,4 @@
-// "use server"
+
 import { currentUser } from "@clerk/nextjs/server";
 import Guest from "../components/Guest";
 import AddNewRecord from "@/components/addRecord";

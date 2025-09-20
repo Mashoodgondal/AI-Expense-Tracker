@@ -12,8 +12,8 @@
 
 'use client';
 import { useRef, useState } from 'react';
-// import addExpenseRecord from '@/app/actions/addExpenseRecord';
-// import { suggestCategory } from '@/app/actions/suggestCategory';
+import addExpenseRecord from '@/app/actions/addExpenseRecord';
+import { suggestCategory } from '@/app/actions/suggestCategory';
 
 const AddRecord = () => {
     const formRef = useRef<HTMLFormElement>(null);
