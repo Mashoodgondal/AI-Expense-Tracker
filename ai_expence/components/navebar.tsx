@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { TbMenuDeep } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 import { UserButton, useUser } from '@clerk/nextjs';
-// import ThemeToggle from './ThemeToggle';
+
 
 const navItems = [
   { name: 'Home', href: '/' },
