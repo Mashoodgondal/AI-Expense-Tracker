@@ -89,11 +89,13 @@ const AddRecord = () => {
                     const formData = new FormData(formRef.current!);
                     clientAction(formData);
                 }}
+
                 className='space-y-6 sm:space-y-8'
             >
-                {/* Expense Description and Date */}
+
+
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 p-3 sm:p-4 bg-gradient-to-r from-emerald-50/50 to-green-50/50 dark:from-emerald-900/10 dark:to-green-900/10 rounded-xl border border-emerald-100/50 dark:border-emerald-800/50'>
-                    {/* Expense Description */}
+
                     <div className='space-y-1.5'>
                         <label
                             htmlFor='text'
