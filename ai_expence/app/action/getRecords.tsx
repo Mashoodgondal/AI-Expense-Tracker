@@ -1,7 +1,7 @@
 'use server';
 import { db } from '@/lib/db';
 import { auth } from '@clerk/nextjs/server';
-import { Record } from '@/types/Record';
+import { Record } from '../../types/record';
 
 async function getRecords(): Promise<{
     records?: Record[];
@@ -14,7 +14,7 @@ async function getRecords(): Promise<{
     }
 
     try {
-        const records = await db.record.findMany({
+        const records = await db.records.findMany({
             where: { userId },
             orderBy: {
                 date: 'desc', // Sort by the `date` field in descending order
