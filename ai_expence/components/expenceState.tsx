@@ -1,12 +1,4 @@
-// import React from 'react'
 
-// const ExpenseStats = () => {
-//     return (
-//         <div>ExpenseStats</div>
-//     )
-// }
-
-// export default ExpenseStats
 
 import React from 'react';
 import getUserRecord from '../app/action/getUserRecord';
