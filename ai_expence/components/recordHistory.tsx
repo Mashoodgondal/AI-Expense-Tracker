@@ -1,20 +1,11 @@
-// import React from 'react'
+import React from 'react'
 
-// const RecordHistory = () => {
-//     return (
-//         <div>RecordHistory
+const RecordHistory = () => {
+    return (
+        <div>RecordHistory
 
-//         </div>
-//     )
-// }
-// import React from 'react'
+        </div>
+    )
+}
+export default RecordHistory
 
-// const RecordHistory = () => {
-//     return (
-//         <div>RecordHistory
-
-//         </div>
-//     )
-// }
-
-// export default RecordHistory
