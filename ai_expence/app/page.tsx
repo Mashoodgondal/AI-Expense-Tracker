@@ -5,7 +5,7 @@ import AddNewRecord from "@/components/addRecord";
 import RecordChart from "@/components/recordChart";
 import ExpenseStats from "@/components/expenceState";
 import AIInsights from "@/components/aiInsights";
-import RecordHistory from "@/components/recordHistory";
+// import RecordHistory from "@/components/recordHistory";
 // import { currentUser } from "../lib/checkUser";
 // import Image from "next/image";
 
@@ -95,7 +95,7 @@ export default async function Home() {
         </div>
         <div className='mt-6 sm:mt-8 space-y-4 sm:space-y-6'>
           <AIInsights />
-          <RecordHistory />
+          {/* <RecordHistory /> */}
         </div>
       </div>
     </main>

@@ -1,5 +1,4 @@
-
-
+'use client';
 import getRecords from '../app/action/getRecords';
 import RecordItem from './RecordItem';
 import { Record } from '../types/record';

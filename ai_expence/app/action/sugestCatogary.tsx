@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const suggestCategory = () => {
-//     return (
-//         <div>suggestCategory</div>
-//     )
-// }
-
-// export default suggestCategory
-
 'use server';
 
 import { categorizeExpense } from '../../lib/ai';
