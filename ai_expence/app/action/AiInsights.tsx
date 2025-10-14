@@ -2,7 +2,7 @@
 
 import { checkUser } from '../../lib/checkUser';
 import { db } from '../../lib/db';
-import { generateExpenseInsights, AIInsight, ExpenseRecord } from '@/lib/ai';
+import { generateExpenseInsights, AIInsight, ExpenseRecord } from '../../lib/ai';
 
 export async function getAIInsights(): Promise<AIInsight[]> {
     try {
