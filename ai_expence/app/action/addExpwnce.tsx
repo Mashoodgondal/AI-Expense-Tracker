@@ -1,15 +1,3 @@
-// import React from 'react'
-
-// const addExpenseRecord = () => {
-//   return (
-//     <div>addExpenseRecord</div>
-//   )
-// }
-
-// export default addExpenseRecord
-
-
-
 'use server';
 import { auth } from '@clerk/nextjs/server';
 import { db } from '../../lib/db';

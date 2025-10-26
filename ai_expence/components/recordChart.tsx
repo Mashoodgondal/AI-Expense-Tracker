@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const RecordChart = () => {
-//     return (
-//         <div>RecordChart</div>
-//     )
-// }
-
-// export default RecordChart
-
 
 import getRecords from '../app/action/getRecords';
 import BarChart from './Barchart'; // Ensure BarChart.tsx or BarChart.jsx exists in the same directory
